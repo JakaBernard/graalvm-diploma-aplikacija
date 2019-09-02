@@ -4,8 +4,8 @@ Zahteve:
 - Inštalirano orodje Maven
 - Inštaliran docker
 
-Programska koda vsebuje gostujoče programske jezike, zato je potrebno v GraalVM predhodno naložiti R z ukazom:
-`gu install R`
+Programska koda vsebuje gostujoče programske jezike, zato je potrebno v GraalVM predhodno naložiti R in native-image (v najnovejših verzijah je izključena iz osnovne inštalacije GraalVM) z ukazom:
+`gu install R native-image`
 
 Pred prvim zagonom je potrebno namestiti zahtevane javanske knjižnjice in docker vsebnik s podatkovno bazo. V ta namen se požene skripta `init.sh`
 
