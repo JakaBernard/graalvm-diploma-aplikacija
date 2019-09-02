@@ -1,0 +1,14 @@
+kumuluzee:
+  name: dimplomska-aplikacija
+  version: 1.0.0
+  env:
+    name: dev
+  datasources:
+    - jndi-name: jdbc/JdbcDS
+      connection-url: jdbc:postgresql://127.0.0.1:5432/loyalty
+      username: postgres
+      password: postgres
+      max-pool-size: 20
+  server:
+    http:
+      port: 8080
