@@ -18,7 +18,7 @@ import javax.transaction.Transactional;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.Logger;
+// import java.util.logging.Logger;
 
 @ApplicationScoped
 public class PurchaseBean {
@@ -27,7 +27,7 @@ public class PurchaseBean {
 
     Value graphLambda;
 
-    private Logger log = Logger.getLogger(PurchaseBean.class.getName());
+    // private Logger log = Logger.getLogger(PurchaseBean.class.getName());
 
     @PostConstruct
     private void init() {
@@ -44,7 +44,7 @@ public class PurchaseBean {
         "file.remove(tmpFile)\n" +
         "return(lines);\n" +
         "}");
-        log.info("Purchase initialised.");
+        // log.info("Purchase initialised.");
     }
 
     public Object[] getPurchases(QueryParameters queryParameters) {

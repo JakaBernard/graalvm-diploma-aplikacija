@@ -17,7 +17,7 @@ import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriInfo;
-import java.util.logging.Logger;
+// import java.util.logging.Logger;
 
 @Path("rewards")
 @Produces(MediaType.APPLICATION_JSON)
@@ -33,7 +33,7 @@ public class RewardsSource {
     RewardBean rewardBean;
 
 
-    private Logger log = Logger.getLogger(RewardsSource.class.getName());
+    // private Logger log = Logger.getLogger(RewardsSource.class.getName());
 
     @Operation(description = "Returns a list of rewards.", summary = "List of rewards", tags = "rewards", responses = {
             @ApiResponse(responseCode = "200",

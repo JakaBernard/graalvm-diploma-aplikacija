@@ -14,18 +14,18 @@ import javax.persistence.TypedQuery;
 import javax.transaction.Transactional;
 
 import java.util.List;
-import java.util.logging.Logger;
+// import java.util.logging.Logger;
 
 @ApplicationScoped
 public class ProductBean {
     @PersistenceContext(unitName = "loyalty-scheme")
     private EntityManager em;
 
-    private Logger log = Logger.getLogger(ProductBean.class.getName());
+    // private Logger log = Logger.getLogger(ProductBean.class.getName());
 
     @PostConstruct
     private void init() {
-        log.info("Product initialised.");
+        // log.info("Product initialised.");
     }
 
     public Object[] getProducts(QueryParameters queryParameters) {

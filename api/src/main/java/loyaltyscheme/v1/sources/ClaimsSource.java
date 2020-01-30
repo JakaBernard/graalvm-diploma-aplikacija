@@ -18,7 +18,7 @@ import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriInfo;
-import java.util.logging.Logger;
+// import java.util.logging.Logger;
 
 @Path("claims")
 @Produces(MediaType.APPLICATION_JSON)
@@ -37,7 +37,7 @@ public class ClaimsSource {
     PurchaseBean purchaseBean;
 
 
-    private Logger log = Logger.getLogger(ClaimsSource.class.getName());
+    // private Logger log = Logger.getLogger(ClaimsSource.class.getName());
 
     @Operation(description = "Returns a list of claims.", summary = "List of claims", tags = "claims", responses = {
             @ApiResponse(responseCode = "200",

@@ -11,18 +11,18 @@ import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
 import javax.transaction.Transactional;
 import java.util.List;
-import java.util.logging.Logger;
+// import java.util.logging.Logger;
 
 @ApplicationScoped
 public class RewardBean {
     @PersistenceContext(unitName = "loyalty-scheme")
     private EntityManager em;
 
-    private Logger log = Logger.getLogger(RewardBean.class.getName());
+    // private Logger log = Logger.getLogger(RewardBean.class.getName());
 
     @PostConstruct
     private void init() {
-        log.info("Reward initialised.");
+        // log.info("Reward initialised.");
     }
 
     public Object[] getRewards(QueryParameters queryParameters) {

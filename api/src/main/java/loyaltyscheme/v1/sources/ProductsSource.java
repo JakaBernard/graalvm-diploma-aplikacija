@@ -17,7 +17,7 @@ import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriInfo;
-import java.util.logging.Logger;
+// import java.util.logging.Logger;
 
 @Path("products")
 @Produces(MediaType.APPLICATION_JSON)
@@ -32,7 +32,7 @@ public class ProductsSource {
     @Inject
     ProductBean productBean;
 
-    private Logger log = Logger.getLogger(ProductsSource.class.getName());
+    // private Logger log = Logger.getLogger(ProductsSource.class.getName());
 
     @Operation(description = "Returns a list of products.", summary = "List of products", tags = "products", responses = {
             @ApiResponse(responseCode = "200",

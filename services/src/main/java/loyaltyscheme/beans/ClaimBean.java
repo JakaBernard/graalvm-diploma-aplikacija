@@ -18,7 +18,7 @@ import javax.transaction.Transactional;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.Logger;
+// import java.util.logging.Logger;
 
 @ApplicationScoped
 public class ClaimBean {
@@ -28,7 +28,8 @@ public class ClaimBean {
     private Value comparisonLambda;
     private Value graphLambda;
 
-    private Logger log = Logger.getLogger(ClaimBean.class.getName());
+    
+    // private Logger log = Logger.getLogger(ClaimBean.class.getName());
 
     @PostConstruct
     private void init() {
@@ -46,7 +47,7 @@ public class ClaimBean {
         "file.remove(tmpFile)\n" +
         "return(lines);\n" +
         "}");
-        log.info("Claim initialised.");
+        // log.info("Claim initialised.");
     }
 
     public Object[] getClaims(QueryParameters queryParameters) {

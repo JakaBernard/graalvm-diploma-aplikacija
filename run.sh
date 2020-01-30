@@ -1,7 +1,10 @@
 #!/bin/bash
 
+# Zaganjanje z Graal
+# /usr/bin/time -v java -cp api/target/classes:api/target/dependency/* com.kumuluz.ee.EeApplication
+
 # Zaganjanje z Javo
-#java -cp api/target/classes:api/target/dependency/* com.kumuluz.ee.EeApplicaiton
+# /usr/bin/time -v java -XX:-UseJVMCICompiler -cp api/target/classes:api/target/dependency/* com.kumuluz.ee.EeApplication
 
 # Zaganjanje kot native image
-./apiExecutable
+/usr/bin/time -v ./apiExecutable
